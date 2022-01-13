@@ -10,6 +10,7 @@ grade: stable
 apps:
   alpaca:
     command: alpaca
+    daemon: simple
     plugs:
       - network
       - network-bind
