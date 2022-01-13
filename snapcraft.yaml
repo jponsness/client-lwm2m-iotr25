@@ -20,7 +20,6 @@ parts:
   client:
     override-build: |
       ./prepare.sh
-      snapcraftctl build
     build-packages:
       - cmake
       - autoconf
