@@ -26,6 +26,6 @@ parts:
     plugin: go
     source: .
     source-type: git
-    go-importpath: iotr25-client
+    go-importpath: launchpad.net/ce-web/alpaca
     
     
