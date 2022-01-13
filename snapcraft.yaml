@@ -9,7 +9,7 @@ grade: stable
 
 apps:
   jbp-iotr25:
-    command: /cmd/jbp-iotr25
+    command: jbp-iotr25
     daemon: simple
     plugs:
       - network
