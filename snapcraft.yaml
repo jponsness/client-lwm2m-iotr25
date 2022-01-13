@@ -21,7 +21,7 @@ parts:
       - cmake
       - autoconf
     plugin: go
-    prepare: |
+    override-build: |
       ./prepare.sh
     source: .
     go-importpath: launchpad.net/ce-web/alpaca
