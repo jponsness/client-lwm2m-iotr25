@@ -1,5 +1,5 @@
 name: jbp-iotr25
-base: core20
+base: core16
 version: V1
 summary: IOTR 2.5 LwM2M Client
 description: |
