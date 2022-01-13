@@ -1,9 +1,9 @@
-name: test
+name: jbp-iotr25
 base: core20
 version: 0.5
-summary: Test client
+summary: IOTR 2.5 LwM2M Client
 description: |
-  Trying to figure our cgo with C-Library
+  LwM2M Client for IOTR 2.5
 confinement: strict
 grade: stable
 
@@ -18,7 +18,7 @@ apps:
 parts:
   client:
     build-packages:
-#      - cmake
+      - cmake
       - autoconf
     plugin: go
     prepare: |
