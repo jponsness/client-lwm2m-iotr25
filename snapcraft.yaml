@@ -9,7 +9,7 @@ grade: stable
 
 apps:
   alpaca:
-    command: cmd/alpaca
+    command: alpaca
     plugs:
       - network
       - network-bind
