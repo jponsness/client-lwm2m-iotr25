@@ -1,0 +1,27 @@
+name: test
+base: core20
+version: 0.5
+summary: Test client
+description: |
+  Trying to figure our cgo with C-Library
+confinement: strict
+grade: stable
+
+apps:
+  test:
+    command: test
+    plugs:
+      - network
+      - network-bind
+      - snapd-control
+      - shutdown
+parts:
+  client:
+    build-packages:
+#      - cmake
+      - autoconf
+    plugin: go
+    prepare: |
+      ./prepare.sh
+    source: .
+    go-importpath: launchpad.net/ce-web/alpaca

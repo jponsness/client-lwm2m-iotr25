@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+FILE INFORMATION
+
+
+-->
+
+<LWM2M xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://openmobilealliance.org/tech/profiles/LWM2M.xsd">
+	<Object ObjectType="MODefinition">
+		<Name>Snap Management</Name>
+		<Description1><![CDATA[This LwM2M objects provides the resources needed to perform management of snaps on the device. Each snap is managed via a dedicated Snap Management Object instance.]]></Description1>
+		<ObjectID>30001</ObjectID>
+		<ObjectURN>urn:oma:lwm2m:oma:30001</ObjectURN>
+		<MultipleInstances>Multiple</MultipleInstances>
+		<Mandatory>Optional</Mandatory>
+
+		<Resources>
+			<Item ID="0">
+				<Name>Name</Name>
+				<Operations>RW</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration>0-255 bytes</RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Name of the snap]]></Description>
+			</Item>
+			<Item ID="1">
+				<Name>Summary</Name>
+				<Operations>RW</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Optional</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration>0-4000 bytes</RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Description of the snap]]></Description>
+			</Item>
+			<Item ID="2">
+				<Name>Confinement</Name>
+				<Operations>RW</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Optional</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration>0-255 bytes</RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Confinement policy of the snap e.g. strict, devmode, classic]]></Description>
+			</Item>
+			<Item ID="3">
+				<Name>Developer</Name>
+				<Operations>RW</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Optional</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration>0-255 bytes</RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Name of the snap developer]]></Description>
+			</Item>
+			<Item ID="4">
+				<Name>Installed Date</Name>
+				<Operations>RW</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Optional</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration>0-255 bytes</RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Timestamp of the snap installation]]></Description>
+			</Item>
+			<Item ID="5">
+				<Name>Installed Size</Name>
+				<Operations>RW</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Optional</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Size of the snap in bytes]]></Description>
+			</Item>
+			<Item ID="6">
+				<Name>Status</Name>
+				<Operations>RW</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Optional</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Status of the snap]]></Description>
+			</Item>
+			<Item ID="7">
+				<Name>Version</Name>
+				<Operations>RW</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Optional</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Version of the snap]]></Description>
+			</Item>
+			<Item ID="8">
+				<Name>Revision</Name>
+				<Operations>RW</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Optional</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Revision of the snap]]></Description>
+			</Item>
+			<Item ID="9">
+				<Name>Dev Mode</Name>
+				<Operations>RW</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Optional</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[If the snap is in devmode]]></Description>
+			</Item>
+
+			<Item ID="11"><Name>Refresh</Name>
+				<Operations>E</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type></Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Updates the snap from the Store.]]></Description>
+			</Item>
+			<Item ID="12"><Name>Remove</Name>
+				<Operations>E</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type></Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Uninstalls the snap from the device.]]></Description>
+			</Item>
+			<Item ID="13"><Name>Revert</Name>
+				<Operations>E</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type></Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Reverts the snap to its previous version.]]></Description>
+			</Item>
+			<Item ID="14"><Name>Enable</Name>
+				<Operations>E</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type></Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Activates a disabled snap.]]></Description>
+			</Item>
+			<Item ID="15"><Name>Disable</Name>
+				<Operations>E</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type></Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Disables an active snap.]]></Description>
+			</Item>
+		</Resources>
+	</Object>
+</LWM2M>
