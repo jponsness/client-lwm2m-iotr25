@@ -1,4 +1,9 @@
 #!/bin/sh
+
+# Get the wakaama sources
+git submodule init
+git submodule update --init --recursive
+
 cd lwm2m
 
 # Build the C headers from the Go files
