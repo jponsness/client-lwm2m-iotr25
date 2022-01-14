@@ -24,7 +24,8 @@ parts:
       - cmake
       - autoconf
     plugin: go
-    source: https://github.com/jponsness/client-lwm2m-iotr25.git
+    source: .
+    source-type: git
     go-importpath: launchpad.net/ce-web/alpaca
     
     
