@@ -8,7 +8,7 @@ confinement: strict
 grade: stable
 
 apps:
-  clientLwm2mIOTR25:
+  clientlwm2miotr25:
     command: clientlwm2miotr25
     daemon: simple
     plugs:
