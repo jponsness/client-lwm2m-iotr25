@@ -27,7 +27,6 @@ parts:
     source: .
     source-type: local
     go-importpath: launchpad.net/ce-web/alpaca
-    build-snaps:
-      - go/latest/stable
+    build-snaps: [go]
     
     
