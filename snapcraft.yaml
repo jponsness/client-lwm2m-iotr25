@@ -1,4 +1,4 @@
-name: clientLwm2mIOTR25
+name: clientlwm2miotr25
 base: core18
 version: V1
 summary: IOTR 2.5 LwM2M Client
@@ -9,7 +9,7 @@ grade: stable
 
 apps:
   clientLwm2mIOTR25:
-    command: clientLwm2mIOTR25
+    command: clientlwm2miotr25
     daemon: simple
     plugs:
       - network
