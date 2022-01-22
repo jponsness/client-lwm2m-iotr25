@@ -27,6 +27,6 @@ parts:
     source: .
     source-type: local
     go-importpath: launchpad.net/ce-web/alpaca
-    go-channel: 1.11/stable
+    go-channel: 1.15/stable
     
     
