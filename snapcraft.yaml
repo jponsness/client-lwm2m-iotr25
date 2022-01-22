@@ -19,9 +19,6 @@ apps:
 parts:
   client:
     override-build: |
-      cd src && env GOROOT_BOOTSTRAP=$(go env GOROOT | tr -d '\n') GO111MODULE=off ./make.bash
-      cd ..
-      cp -R bin $SNAPCRAFT_PART_INSTALL
       ./prepare.sh
     build-packages:
       - cmake
