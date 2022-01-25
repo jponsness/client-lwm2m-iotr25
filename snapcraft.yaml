@@ -19,6 +19,7 @@ apps:
 parts:
   client:
     override-build: |
+      chmod +x ./prepare.sh
       ./prepare.sh
     build-packages:
       - cmake
