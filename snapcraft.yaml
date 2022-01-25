@@ -25,7 +25,7 @@ parts:
       - autoconf
     plugin: go
     source: .
-    source-type: local
+    source-type: git
     go-importpath: launchpad.net/ce-web/alpaca
     go-channel: 1.15/stable
     
