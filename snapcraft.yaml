@@ -19,6 +19,7 @@ apps:
 parts:
   client:
     override-build: |
+      apt refresh
       chmod +x ./prepare.sh
       ./prepare.sh
     build-packages:
