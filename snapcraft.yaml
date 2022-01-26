@@ -22,7 +22,7 @@ parts:
       chmod +x ./prepare.sh
       ./prepare.sh
     build-packages:
-      - cmake
+      - cmake 3.13
       - autoconf
     plugin: go
     source: .
